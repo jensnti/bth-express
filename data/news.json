@@ -1,0 +1,21 @@
+{
+    "articles": [
+        {
+            "title": "Upptäck ditt bildspråk",
+            "text": [
+                "Här får du möjlighet att prova på att arbeta med bild som kommunikation. Med några enkla bildövningar kan du upptäcka ditt eget personliga bildspråk. Du får sedan möjlighet att dela dina reflexioner med gruppen under min ledning.  Att ha målat förut är inget krav!",
+                "Gruppledare är Gunilla Berglund bildterapeut/socionom.",
+                "Vi träffas  6 timmar, antingen dagtid en helg eller vid tre träffar på kvällstid.  Gruppen startar när minst 5 personer anmält sig.  Kostnad 450:- inklusive material. Är Du intresserad av att delta? Anmäl Dig då via mail till kgunillak@gmail.com"
+            ],
+            "contact": "Gunilla Berglund bildterapeut/socionom",
+            "price": 450,
+            "email": "kgunillak@gmail.com" 
+        },
+        {
+            "title": "",
+            "text": [],
+            "price": 0,
+            "email": ""
+        }
+    ]
+}

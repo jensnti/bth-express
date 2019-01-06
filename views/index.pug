@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  main(class='container', role='main')
+    h1(class='display-3')= title
+    each article in data
+      div.row
+        h1 #{article.title}
+        each para in article.text
+          p= para
+        ul
+          li Kontaktperson: #{article.contact}
+          li Pris: #{article.price}
+          li
+            a(href='mailto:' + article.email)= article.email

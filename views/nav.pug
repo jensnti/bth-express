@@ -1,0 +1,26 @@
+mixin mlink(href, name)
+  if name === title
+    a(class='nav-link active' href=href)= name
+  else
+    a(class='nav-link' href=href)= name
+
+mixin drop(href, name)
+  a(class='dropdown-item' href=href)= name
+
+- var members = ['Anna-Karin', 'Birgitta', 'Carin', 'Gunilla', 'Karin', 'Katarina', 'Leenah', 'Ninne', 'Ulla']
+
+nav(class='navbar navbar-expand-md navbar-dark bg-dark fixed-top')
+  a(class='navbar-brand', href='/') Bildterapihuset 
+  button(class='navbar-toggler', type='button', data-toggle='collapse', data-target='#navbar', aria-controls='navbar', aria-expanded='false', aria-label='Toggle navigation')
+    span(class='navbar-toggler-icon')
+  div(class='collapse navbar-collapse', id='navbar')
+    ul(class='navbar-nav mr-auto')
+      li(class='nav-item')
+        +mlink('/', 'Aktuellt')
+      li(class='nav-item')
+        +mlink('/contact', 'Kontakt')
+      li(class='nav-item dropdown')
+        a(class='nav-link dropdown-toggle', href='#', id='dropdown01', data-toggle='dropdown', aria-haspopup='true',aria-expanded='false') Medlemmar
+        div(class='dropdown-menu', aria-labelledby='dropdown01')
+          each member in members
+            a(class='dropdown-item', href='/members/' + member )= member
